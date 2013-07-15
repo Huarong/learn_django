@@ -4,7 +4,7 @@ from django.conf.urls import patterns, include, url
 # from django.contrib import admin
 # admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns('form_operation.views',
     # Examples:
     # url(r'^$', 'learn_django.views.home', name='home'),
     # url(r'^learn_django/', include('learn_django.foo.urls')),
@@ -14,5 +14,5 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    url(r'^form_operation/', include('form_operation.urls')),
+    url(r'search/$', 'search', name='search')
 )
